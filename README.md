@@ -6,6 +6,7 @@ Rust假人插件/虚拟人数
 
 ## 2.使用插件
 管理员：进入游戏后，按F1打开控制台，在控制台中输入createstaticplayer后回车，生成一个假人。
+
 普通玩家：授权权限StaticPlayers.use后可以使用上述指令。
 
 ## Tips
