@@ -173,7 +173,7 @@ namespace Oxide.Plugins
             var fake = new BasePlayer();
             if(arg.Player() == null)
             {
-                Vector3 v = new Vector3(0,0,0);
+                Vector3 v = new Vector3(100,100,100);
                 Quaternion q = Quaternion.Euler(90, 0, 0);
                 fake = GameManager.server.CreateEntity(playerPrefab, v, q, true) as BasePlayer;
             }
