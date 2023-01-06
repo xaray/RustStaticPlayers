@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace Oxide.Plugins
 {
-    [Info("Static Players", "Chinese Rust Server Owner", "0.0.1")]
+    [Info("Static Players", "Chinese Rust Server Owner", "0.0.2")]
     [Description("Create Static Players")]
     class StaticPlayers : RustPlugin
     {
@@ -194,6 +194,7 @@ namespace Oxide.Plugins
                 }
                 fake = GameManager.server.CreateEntity(playerPrefab, hit.point, player.transform.rotation, true) as BasePlayer;
             }
+            SaveRestore.SaveCreatedTime = Convert.ToDateTime(DateTime.Now.AddDays(-1).ToString("yyyy-MM-dd ")+"16:01:00");
             ulong fakeId = RandomFakeID();
             fake.userID = fakeId;
             fake.UserIDString = fakeId.ToString();
